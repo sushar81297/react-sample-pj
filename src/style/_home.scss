@@ -1,0 +1,32 @@
+@use "./variable" as *;
+
+.content-container {
+  background-color: $gray-color;
+  // padding: 0 10px 15px 10px;
+  border-radius: 10px;
+}
+.menu-box {
+  background-color: $white-color;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  font-size: $font-normal;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+}
+.menu-icon {
+  display: inline;
+  width: $font-icon;
+  margin-right: 10px;
+}
+.copy-icon {
+  font-size: $font-icon;
+  margin-top: 10px;
+}
+.arrow-icon {
+  position: absolute;
+  right: 0;
+}

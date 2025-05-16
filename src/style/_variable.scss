@@ -1,0 +1,41 @@
+$primary-color: var(--primaryColor);
+$base-color: var(--baseColor);
+$btn-bg: var(--btnBgColor);
+$otp-color: #d8e6d3;
+$black-color: #000000;
+$white-color: #ffffff;
+$gray-color: #f4f4f4;
+$gray-border: #d9d9d9;
+$table-striped-color: #d9d9d9;
+$gray-color-one: #a3a3a3;
+$gray-color-two: #cccccc;
+$gray-color-three: #e6e6e6;
+$gray-color-four: #f2f2f2;
+
+$font-icon: 28px;
+$font-icon-normal: 22px;
+$font-large: 25px;
+$font-title: 18px;
+$font-sub-title: 16px;
+$font-normal: 14px;
+$font-small: 13px;
+
+// Fonts
+@font-face {
+  font-family: "Segoe UI";
+  src: url("@/fonts/SegoeUI.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PyiDaungSu";
+  src: url("@/fonts/Pyidaungsu.ttf") format("truetype");
+}
+$font-en: "Segoe UI", sans-serif;
+$font-mn: "PyiDaungSu", sans-serif;
+
+html.lang-en {
+  font-family: $font-en;
+}
+
+html.lang-mn {
+  font-family: $font-mn;
+}

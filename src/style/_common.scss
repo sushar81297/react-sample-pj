@@ -1,0 +1,139 @@
+@use "./variable" as *;
+
+body {
+  background: $gray-color;
+}
+
+.active-color {
+  color: $primary-color;
+}
+.font-b {
+  font-weight: bold;
+}
+
+.margin-zero {
+  margin: 0 !important;
+}
+
+.container {
+  padding: 5px;
+}
+
+.inner-container {
+  margin: 10px;
+  padding: 13px;
+  border-radius: 10px;
+  background-color: $white-color;
+}
+.inner {
+  padding: 13px;
+}
+.inner-height {
+  min-height: calc(100vh - 100px);
+}
+
+.btn-container {
+  width: 100%;
+  background: $white-color;
+  padding: 22px 25px 30px 25px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+}
+.btn-item {
+  background: $primary-color;
+  border-color: $primary-color;
+  color: $white-color;
+  font-size: $font-normal;
+}
+.btn-item:hover,
+.btn-item:focus {
+  background: $primary-color !important;
+  border-color: $primary-color !important;
+}
+.share-container {
+  display: flex;
+  justify-content: center;
+  .icon {
+    background-color: #fff;
+    border-radius: 30%;
+    width: 45px;
+    height: 45px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    img {
+      width: 85%;
+      padding-left: 8px;
+      padding-top: 7px;
+    }
+    span {
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }
+}
+.otp-container {
+  display: flex;
+  justify-content: center;
+}
+.otp-input {
+  width: 47px;
+  height: 57px;
+  text-align: center;
+  background: $otp-color;
+  border-radius: 6px;
+  border: 1px solid $otp-color;
+  font-weight: bold;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+.otp-input:focus,
+.otp-input.ant-input-focused {
+  border-color: $otp-color !important;
+  background: $otp-color !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.otp-input:hover,
+.otp-input.ant-input-focused {
+  border-color: $otp-color !important;
+  background: $otp-color !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.success-title {
+  color: $primary-color;
+  font-size: $font-large;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.success-info {
+  background: $white-color;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid $white-color;
+  .icon-box {
+    display: flex;
+    justify-content: center;
+    margin-top: -34px;
+    .icon {
+      background-color: #fff;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      img {
+        width: 85%;
+        padding-left: 8px;
+        padding-top: 7px;
+      }
+    }
+  }
+  .info-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    font-size: $font-normal;
+  }
+}

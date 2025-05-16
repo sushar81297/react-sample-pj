@@ -1,0 +1,58 @@
+@use "./variable" as *;
+
+.title {
+  font-size: $font-title;
+  color: $primary-color;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.input-box {
+  margin-top: 5px;
+}
+.input-label {
+  font-size: $font-normal;
+  font-weight: bold;
+}
+
+.info-box {
+  background: $base-color;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid $primary-color;
+  h4 {
+    font-size: $font-normal;
+    font-weight: bold;
+  }
+  p {
+    font-size: $font-small;
+    margin-top: 10px;
+    display: flex;
+    img {
+      width: 22px;
+    }
+  }
+}
+
+.bank-info {
+  background: $gray-color;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid $gray-border;
+  .info-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    font-size: $font-small;
+    label {
+      opacity: 0.5;
+    }
+  }
+}
+
+.verify-code-label {
+  font-size: $font-normal;
+  margin-top: 10px;
+}

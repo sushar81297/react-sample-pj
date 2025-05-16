@@ -1,10 +1,10 @@
 import axios, { AxiosError } from "axios";
-import { user } from "../atoms/agencyBanking";
+import { user } from "@/atoms/agencyBanking";
 import { getRecoil } from "recoil-nexus";
 
 // Create an Axios instance
 const apiClient = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://smart-home-production-79e1.up.railway.app",
   headers: {
     "Content-Type": "application/json",
   },
@@ -12,9 +12,13 @@ const apiClient = axios.create({
 
 // Attach token dynamically before each request
 apiClient.interceptors.request.use((config) => {
-  const token = getRecoil(user).name;
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
+  try {
+    const { token } = getRecoil(user);
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+  } catch (error) {
+    console.warn("getRecoil failed. Is RecoilNexus initialized yet?", error);
   }
   return config;
 });

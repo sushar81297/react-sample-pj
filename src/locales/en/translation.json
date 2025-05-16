@@ -1,7 +1,25 @@
 {
   "translation": {
-    "enter_mobile_number": "Enter Mobile Number",
-    "required_phone": "Please enter your mobile number.",
-    "enter_pin": "Enter Pin"
+    "cashIn": "Cash In",
+    "cashOut": "Cash Out",
+    "transfer": "Transfer",
+    "enterAccount": "Enter Bank Account Number",
+    "infolabel": "Please Check user Bank Card and NRC.",
+    "bringBankCard": " Use Bring Bank card to merchant.",
+    "bringNRC": "  Use Bring NRC to merchant.",
+    "next": "Next",
+    "back": "Back",
+    "history": "History",
+    "bankinfo": "Bank Account Info",
+    "amount": "Amount",
+    "enterAmt": "Enter Amount",
+    "confirmation": "Confirmation",
+    "transactionDetail": "Transaction Details",
+    "verifyCode": "Verify Code",
+    "verify": "Verify",
+    "verfiyLabel": "Check your SMS, we have sent you the verification code at {{phone}} ",
+    "noReceiveCode": "Didn't receive Code?",
+    "resendCode": "Resend Code",
+    "transactionSuccess": "Transaction Successful"
   }
 }

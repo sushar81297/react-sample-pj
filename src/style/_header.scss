@@ -1,0 +1,38 @@
+@use "./variable" as *;
+
+.header-container {
+  width: 100%;
+  font-weight: bold;
+  font-size: $font-normal;
+}
+
+.header-home-container {
+  width: 100%;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: $font-normal;
+}
+
+.header-icon {
+  margin-left: -12px;
+  width: $font-icon-normal;
+  float: left;
+}
+
+.header-left {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.header-right {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  color: $primary-color;
+}
+
+.history-icon {
+  margin-top: -8px;
+  width: $font-icon;
+}

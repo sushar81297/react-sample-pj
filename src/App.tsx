@@ -1,14 +1,16 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { useRecoilValue } from "recoil";
-import { user } from "./atoms/agencyBanking";
-import Router from "./router";
+import Router from "@/router";
 
 function App() {
-  const userData = useRecoilValue(user);
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
   useEffect(() => {
-    changeLanguage("en");
+    const lang = "en";
+    changeLanguage(lang);
+    document.body.style.setProperty("--primaryColor", "#65B448");
+    document.body.style.setProperty("--btnBgColor", "#65B448");
+    document.body.style.setProperty("--baseColor", "#f6fff3");
+    document.documentElement.className = `lang-${lang}`;
   }, []);
   const changeLanguage = (value: string) => {
     i18n.changeLanguage(value);
@@ -16,9 +18,6 @@ function App() {
 
   return (
     <div>
-      {userData.name}
-      {t("enter_mobile_number")}
-
       <Router />
     </div>
   );
